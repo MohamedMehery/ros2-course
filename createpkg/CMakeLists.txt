@@ -30,7 +30,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(createpkg src/createpkg.cpp)
+add_executable(createpkg src/creatpkg.cpp)
 ament_target_dependancies(createpkg rclcpp)
 install(TARGETS
   createpkg
@@ -40,4 +40,10 @@ install(
   DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
+
+target_include_directories(my_target
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>)
+    
 ament_package()
