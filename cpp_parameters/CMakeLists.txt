@@ -29,5 +29,16 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+add_executable(parameter_node src/cpp_parameters_node.cpp)
+ament_target_dependencies(parameter_node rclcpp)
+
+install(TARGETS
+  parameter_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()

@@ -8,21 +8,21 @@ using namespace std::chrono_literals;
 class ParametersClass: public rclcpp::Node
 {
     public:
-    ParametersClass(): Node("Parameters_node")
+    ParametersClass(): Node("parameter_node")
     {
-        this->declare_parameter<std::string>("my_paramter" , "world");
+        this->declare_parameter<std::string>("my_parameter", "world");
         timer_=  this-> create_wall_timer(
             1000ms , std::bind(&ParametersClass::respond,this));
     } 
 
     void respond()
     {
-        this->get_parameter("my_parameter" , paramter_string_ );
-        RCLCPP_INFO(this->get_logger() , "Hello %s" , paramter_string_.cstr());
+        this->get_parameter("my_parameter" , parameter_string_ );
+        RCLCPP_INFO(this->get_logger(), "Hello %s", parameter_string_.c_str());   
     }
     private:
-        std::string paramter_string_;
-        rclcpp::TimeBase::SharedPtr timer_;
+        std::string parameter_string_;
+        rclcpp::TimerBase::SharedPtr timer_;
 
 };
 
