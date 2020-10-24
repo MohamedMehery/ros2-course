@@ -31,5 +31,13 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(createpkg src/createpkg.cpp)
-
+ament_target_dependancies(createpkg rclcpp)
+install(TARGETS
+  createpkg
+  DESTINATION lib/${PROJECT_NAME}
+  )
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 ament_package()
