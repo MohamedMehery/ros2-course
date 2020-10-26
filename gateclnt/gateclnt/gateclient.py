@@ -22,6 +22,8 @@ def read_NONgate_images(DATADIR = '/content/drive/My Drive/GATEDETECTION/IP_NOGA
 #read_gate_images()
 #read_NONgate_images()
 
+gate = []
+
 
 
 def gatedetection:
@@ -87,7 +89,8 @@ def gatedetection:
     start = (int(mid_point[0][0]) - int(distance[0]/2), int(mid_point[0][1]) - int(distance[0]/4))
     end =  (int(mid_point[0][0] )+ int(distance[0]/2) , int(mid_point[0][1] )+ int(distance[0]/4))
 
-
+    gate_center = [mid_point[0][0] , mid_point[0][1]]
+    
     # print(start)
     # print(end)
     blur = cv2.rectangle( img , start , end , (255 , 255 , 255 ) , 3) 
@@ -98,6 +101,18 @@ def gatedetection:
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     else : print('NO GATE!!')
+
+#Notice that box coordinates start from 0
+def find_centerbox:
+    x_boxsize = int(680/3)
+    y_boxsize = int(480/3)
+    for i inrange(3):
+        if gate_center[0] < x_boxsize*i:
+            x_cord = i
+
+    for i inrange(3):
+        if gate_center[1] < y_boxsize*i:
+            y_cord = i
 
 
 class MinimalClientAsync(Node):
@@ -111,9 +126,9 @@ class MinimalClientAsync(Node):
 
     def send_request(self):
         read_gate_images()
-
-        self.req.a = int(sys.argv[1])
-        self.req.b = int(sys.argv[2])
+        req.x_coor = x_cord
+        req.y_coor = y_cord
+        
         self.future = self.cli.call_async(self.req)
 
 
@@ -133,8 +148,8 @@ def main(args=None):
                     'Service call failed %r' % (e,))
             else:
                 minimal_client.get_logger().info(
-                    'Result of add_two_ints: for %d + %d = %d' %
-                    (minimal_client.req.a, minimal_client.req.b, response.sum))
+                    'Result of gate guid: %s %s' %
+                    (minimal_client.req.x_coor, minimal_client.req.y_coor, response.x_instruct , response.y_instruct))
             break
 
     minimal_client.destroy_node()
