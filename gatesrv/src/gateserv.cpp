@@ -14,8 +14,8 @@ void add(const std::shared_ptr<interfaces::srv::interface::request> request,
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\nfirst: %d" " second: %d\n",
                 request->x_coor, request->y_coor);
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%s]\n",
-                 (string)response->sum);
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response: [%s] and [%s]\n",
+                (string)response->x_instruct , (string)response->y_instruct);
 }
 
 
