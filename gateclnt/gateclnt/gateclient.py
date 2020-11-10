@@ -4,17 +4,17 @@ import sys
 import cv2 
 import numpy as np
 
-def read_gate_images(DATADIR = '/content/drive/My Drive/GATEDETECTION/IP_GATE'):
+def read_gate_images():
     try :
-      gate = cv.imread("~/dev_ws/src/gateclnt/gate.jpg"))# , cv2.IMREAD_GRAYSCALE)
+      gate = cv.imread("~/dev_ws/src/gateclnt/gate.jpg")# , cv2.IMREAD_GRAYSCALE)
       gate = cv2.resize(gate, (480, 640))
 
     except Exception as e:
       pass
 
-def read_NONgate_images(DATADIR = '/content/drive/My Drive/GATEDETECTION/IP_NOGATE'):
+def read_NONgate_images():
     try :
-      notgate = cv.imread("~/dev_ws/src/gateclnt/notgate.jpg"))# , cv2.IMREAD_GRAYSCALE)
+      notgate = cv.imread("~/dev_ws/src/gateclnt/notgate.jpg")# , cv2.IMREAD_GRAYSCALE)
       notgate = cv2.resize(notgate, (480, 640))
     except Exception as e:
       pass
@@ -26,7 +26,7 @@ gate = []
 
 
 
-def gatedetection:
+def gatedetection():
     img = gate #change the pic type, gate or notgate
     img = cv2.resize(img, (480, 640))
     #img = cv2.resize(img , None , fx = 0.4 , fy = 0.4)
@@ -77,41 +77,41 @@ def gatedetection:
 
     #-np.sort(-radiuses_array)
     if len(center_array) != 0:
-    mid_point = [ np.mean( center_array , axis = 0) ]
-    distance = np.max(center_array  , axis = 0) - np.min(center_array  , axis = 0) 
-    radius = int(distance[0]/2)
+        mid_point = [ np.mean( center_array , axis = 0) ]
+        distance = np.max(center_array  , axis = 0) - np.min(center_array  , axis = 0) 
+        radius = int(distance[0]/2)
 
-    # print(mid_point)
-    # print(center_array)
-    # print(distance)
-    # print(len(contours))
+        # print(mid_point)
+        # print(center_array)
+        # print(distance)
+        # print(len(contours))
 
-    start = (int(mid_point[0][0]) - int(distance[0]/2), int(mid_point[0][1]) - int(distance[0]/4))
-    end =  (int(mid_point[0][0] )+ int(distance[0]/2) , int(mid_point[0][1] )+ int(distance[0]/4))
+        start = (int(mid_point[0][0]) - int(distance[0]/2), int(mid_point[0][1]) - int(distance[0]/4))
+        end =  (int(mid_point[0][0] )+ int(distance[0]/2) , int(mid_point[0][1] )+ int(distance[0]/4))
 
-    gate_center = [mid_point[0][0] , mid_point[0][1]]
-    
-    # print(start)
-    # print(end)
-    blur = cv2.rectangle( img , start , end , (255 , 255 , 255 ) , 3) 
-    cv.putText(blur ,"Gate" , ( int(mid_point[0][0]) , int(mid_point[0][1]) ) ,cv.FONT_HERSHEY_COMPLEX , 1 , (250,250,250))
+        gate_center = [mid_point[0][0] , mid_point[0][1]]
+        
+        # print(start)
+        # print(end)
+        blur = cv2.rectangle( img , start , end , (255 , 255 , 255 ) , 3) 
+        cv.putText(blur ,"Gate" , ( int(mid_point[0][0]) , int(mid_point[0][1]) ) ,cv.FONT_HERSHEY_COMPLEX , 1 , (250,250,250))
 
-    cv2_imshow(img)
+        cv2_imshow(img)
 
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
     else : print('NO GATE!!')
 
 #Notice that box coordinates start from 0
-def find_centerbox:
+def find_centerbox():
     x_boxsize = int(680/3)
     y_boxsize = int(480/3)
     #make notice that the coordinates start from 0 not 1
-    for i inrange(3):
+    for i in range(3):
         if gate_center[0] < x_boxsize*i:
             x_cord = i
 
-    for i inrange(3):
+    for i in range(3):
         if gate_center[1] < y_boxsize*i:
             y_cord = i
 

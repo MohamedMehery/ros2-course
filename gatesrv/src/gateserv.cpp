@@ -14,8 +14,25 @@ void add(const std::shared_ptr<interfaces::srv::interface::request> request,
   */
   int x = request->x_coor;
   int y = request->y_coor;
+  switch(x)
+  {
+    case 0:
+      response->x_instruct = "move lift";break;
+    case 2:
+      response->x_instruct = "move right";break;
+    default:
+      response->x_instruct = "don't move horizontally";break;   
+  }
 
-  
+  switch(y)
+  {
+    case 0:
+      response->y_instruct = "move up";break;
+    case 2:
+      response->y_instruct = "move down";break;     
+    default:
+      response->y_instruct = "don't move vertically";break;   
+  } 
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\nfirst: %d" " second: %d\n",
                 request->x_coor, request->y_coor);
