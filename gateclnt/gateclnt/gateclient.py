@@ -106,6 +106,7 @@ def gatedetection:
 def find_centerbox:
     x_boxsize = int(680/3)
     y_boxsize = int(480/3)
+    #make notice that the coordinates start from 0 not 1
     for i inrange(3):
         if gate_center[0] < x_boxsize*i:
             x_cord = i
