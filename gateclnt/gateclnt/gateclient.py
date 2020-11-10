@@ -125,7 +125,7 @@ class MinimalClientAsync(Node):
         self.req = getdetect.Request()
 
     def send_request(self):
-        read_gate_images()
+        read_gate_images() #We can change this line into read_Nongate_image()
         req.x_coor = x_cord
         req.y_coor = y_cord
         
