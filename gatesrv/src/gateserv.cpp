@@ -9,8 +9,10 @@ using namespace std;
 void add(const std::shared_ptr<interfaces::srv::interface::request> request,
           std::shared_ptr<interfaces::srv::interface::response>      response)
 {
+  /* 
   response->x_instruct = request->x_coor + request->y_coor;
   response->y_instruct = request->x_coor + request->y_coor;
+  */
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\nfirst: %d" " second: %d\n",
                 request->x_coor, request->y_coor);

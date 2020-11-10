@@ -126,6 +126,7 @@ class MinimalClientAsync(Node):
 
     def send_request(self):
         read_gate_images() #We can change this line into read_Nongate_image()
+        find_centerbox()    #this function find the coordinates of gate center
         req.x_coor = x_cord
         req.y_coor = y_cord
         
