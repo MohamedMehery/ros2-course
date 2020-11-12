@@ -19,10 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(interfaces REQUIRED)
-rosidl_generate_interfaces(${PROJECT_NAME}
-  ${srv_files}
-)
+
 add_executable(server src/gateserv.cpp)
 ament_target_dependencies(server
   rclcpp interfaces)
@@ -35,5 +32,16 @@ endif()
 install(TARGETS
   server
   DESTINATION lib/${PROJECT_NAME})
+
+
+ament_target_dependencies(publish_address_book
+  "rclcpp"
+)
+
+install(TARGETS publish_address_book
+ DESTINATION lib/${PROJECT_NAME})
+
+rosidl_target_interfaces(publish_address_book
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 ament_package()
