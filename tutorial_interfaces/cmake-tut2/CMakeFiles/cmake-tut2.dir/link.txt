@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/cmake-tut2.dir/src/mylib.cpp.o CMakeFiles/cmake-tut2.dir/main.cpp.o -o cmake-tut2 
