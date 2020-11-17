@@ -3,5 +3,6 @@
 int main()
 {
     printhello();
+    printwelcome();
     return 0;
 }
