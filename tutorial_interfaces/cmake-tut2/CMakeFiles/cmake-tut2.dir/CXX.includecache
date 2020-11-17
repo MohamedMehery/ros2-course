@@ -10,6 +10,10 @@
 mylib.hpp
 /home/mohamedmehery/dev_ws/src/tutorial_interfaces/cmake-tut2/mylib.hpp
 
+/home/mohamedmehery/dev_ws/src/tutorial_interfaces/cmake-tut2/src/mylib.cpp
+mylib.hpp
+/home/mohamedmehery/dev_ws/src/tutorial_interfaces/cmake-tut2/src/mylib.hpp
+
 hdr/mylib.hpp
 iostream
 -
