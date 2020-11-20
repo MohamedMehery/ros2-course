@@ -1,0 +1,5 @@
+int x_coor
+int y_coor
+---
+string x_instruct
+string y_instruct

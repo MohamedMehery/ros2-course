@@ -1,0 +1,1052 @@
+[0.208s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'gatesrv']
+[0.208s] DEBUG:colcon:Parsed command line arguments: Namespace(base_paths=['.'], build_base='build', continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa602271128>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['gatesrv'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa602271128>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa602271470>)
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mohamedmehery/dev_ws/src'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extensions ['ignore']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extensions ['python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extensions ['ignore']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extensions ['python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extensions ['ignore']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extensions ['python']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/build) by extensions ['ignore']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/build) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/build) ignored
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/install) by extensions ['ignore']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/install) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/install) ignored
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/log) by extensions ['ignore']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/log) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/log) ignored
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extensions ['ignore']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extensions ['python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extensions ['ignore']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extensions ['python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extension 'python'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Python package in 'auv final/AUV_final_project/AUV_ws/src/gate_detection' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/gate_detection) by extension 'python_setup_py'
+[0.616s] DEBUG:colcon.colcon_core.package_identification:Package 'auv final/AUV_final_project/AUV_ws/src/gate_detection' with type 'python' and name 'gate_detection'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extensions ['ignore']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extensions ['python']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extensions ['ignore']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extensions ['python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(auv final/AUV_final_project/AUV_ws/src/interfaces/srv) by extension 'python_setup_py'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extensions ['ignore']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extensions ['python']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extensions ['ignore']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extensions ['python']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extension 'python'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extensions ['python_setup_py']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include) by extension 'python_setup_py'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extensions ['ignore']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extensions ['python']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extension 'python'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extensions ['python_setup_py']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/include/cpp_parameters) by extension 'python_setup_py'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extensions ['ignore']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extensions ['python']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extension 'python'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extensions ['python_setup_py']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/launch) by extension 'python_setup_py'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extensions ['ignore']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extensions ['colcon_meta']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extensions ['python']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extension 'python'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extensions ['python_setup_py']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_parameters/src) by extension 'python_setup_py'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['ignore']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['python']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'python'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extensions ['python_setup_py']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub) by extension 'python_setup_py'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extensions ['ignore']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extensions ['python']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extension 'python'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extensions ['python_setup_py']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include) by extension 'python_setup_py'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extensions ['ignore']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extensions ['python']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extension 'python'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extensions ['python_setup_py']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/include/cpp_pubsub) by extension 'python_setup_py'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extensions ['ignore']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extensions ['colcon_pkg']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extension 'colcon_pkg'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extensions ['colcon_meta']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extension 'colcon_meta'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extensions ['python']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extension 'python'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extensions ['python_setup_py']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_pubsub/src) by extension 'python_setup_py'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extensions ['ignore']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extensions ['colcon_meta']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extensions ['python']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extension 'python'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extensions ['python_setup_py']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg) by extension 'python_setup_py'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extensions ['ignore']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extensions ['python']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extension 'python'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extensions ['python_setup_py']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include) by extension 'python_setup_py'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extensions ['ignore']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extensions ['python']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extension 'python'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extensions ['python_setup_py']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/include/createpkg) by extension 'python_setup_py'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extensions ['ignore']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extensions ['python']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extension 'python'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extensions ['python_setup_py']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/launch) by extension 'python_setup_py'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extensions ['ignore']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extension 'ignore'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extensions ['python']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extension 'python'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extensions ['python_setup_py']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(createpkg/src) by extension 'python_setup_py'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extensions ['ignore']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extensions ['colcon_meta']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extension 'colcon_meta'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extensions ['python']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extension 'python'
+[0.637s] DEBUG:colcon.colcon_core.package_identification:Python package in 'gateclnt' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(gateclnt) by extension 'python_setup_py'
+[1.033s] DEBUG:colcon.colcon_core.package_identification:Package 'gateclnt' with type 'python' and name 'gateclnt'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extensions ['ignore']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extensions ['colcon_pkg']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extension 'colcon_pkg'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extensions ['colcon_meta']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extension 'colcon_meta'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extensions ['python']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extension 'python'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extensions ['python_setup_py']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv) by extension 'python_setup_py'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extensions ['ignore']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extensions ['colcon_pkg']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extension 'colcon_pkg'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extensions ['colcon_meta']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extension 'colcon_meta'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extensions ['python']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles) by extension 'python_setup_py'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extensions ['ignore']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extensions ['colcon_pkg']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extension 'colcon_pkg'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extensions ['colcon_meta']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extension 'colcon_meta'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extensions ['python']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extension 'python'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extensions ['python_setup_py']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4) by extension 'python_setup_py'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extensions ['ignore']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_pkg']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_pkg'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_meta']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_meta'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extension 'python'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python_setup_py']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC) by extension 'python_setup_py'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['ignore']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['ignore']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'ignore'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_pkg'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_meta']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_meta'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python_setup_py']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python_setup_py'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'ignore'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extensions ['ignore']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extension 'ignore'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extensions ['colcon_pkg']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extension 'colcon_pkg'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extensions ['colcon_meta']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extension 'colcon_meta'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extensions ['python']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extension 'python'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extensions ['python_setup_py']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0) by extension 'python_setup_py'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extensions ['ignore']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extension 'ignore'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extensions ['colcon_pkg']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extension 'colcon_pkg'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extensions ['colcon_meta']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extension 'colcon_meta'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extensions ['python']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extension 'python'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extensions ['python_setup_py']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC) by extension 'python_setup_py'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extensions ['ignore']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extension 'ignore'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extensions ['python']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extension 'python'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extensions ['ignore']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extension 'ignore'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extension 'colcon_pkg'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extensions ['colcon_meta']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extension 'colcon_meta'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extensions ['python']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extension 'python'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extensions ['python_setup_py']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX) by extension 'python_setup_py'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extension 'ignore'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extensions ['python']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extension 'python'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/3.19.0/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extensions ['ignore']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extension 'ignore'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extensions ['python']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extension 'python'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extensions ['ignore']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extensions ['colcon_pkg']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extension 'colcon_pkg'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extensions ['colcon_meta']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extension 'colcon_meta'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extensions ['python']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extension 'python'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extensions ['python_setup_py']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core) by extension 'python_setup_py'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extensions ['ignore']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extension 'ignore'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extensions ['colcon_pkg']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extension 'colcon_pkg'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extensions ['colcon_meta']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extension 'colcon_meta'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extensions ['python']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extension 'python'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extensions ['python_setup_py']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_core/stamps) by extension 'python_setup_py'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extensions ['ignore']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extension 'ignore'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extensions ['colcon_pkg']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extension 'colcon_pkg'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extensions ['colcon_meta']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extension 'colcon_meta'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extensions ['python']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extension 'python'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extensions ['python_setup_py']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_package_templates) by extension 'python_setup_py'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extensions ['ignore']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extension 'ignore'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extensions ['colcon_pkg']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extension 'colcon_pkg'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extensions ['colcon_meta']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extension 'colcon_meta'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extensions ['python']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extension 'python'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extensions ['python_setup_py']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/ament_cmake_uninstall_target) by extension 'python_setup_py'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extensions ['ignore']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extension 'ignore'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extensions ['colcon_pkg']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extension 'colcon_pkg'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extensions ['colcon_meta']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extension 'colcon_meta'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extensions ['python']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extension 'python'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extensions ['python_setup_py']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build) by extension 'python_setup_py'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/build) by extensions ['ignore']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/build) by extension 'ignore'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/build) ignored
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/install) by extensions ['ignore']
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/install) by extension 'ignore'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/install) ignored
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/log) by extensions ['ignore']
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/log) by extension 'ignore'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/build/log) ignored
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extensions ['ignore']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extension 'ignore'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extensions ['colcon_pkg']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extension 'colcon_pkg'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extensions ['colcon_meta']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extension 'colcon_meta'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extensions ['python']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extension 'python'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extensions ['python_setup_py']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include) by extension 'python_setup_py'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extensions ['ignore']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extension 'ignore'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extensions ['colcon_pkg']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extension 'colcon_pkg'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extensions ['colcon_meta']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extension 'colcon_meta'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extensions ['python']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extension 'python'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extensions ['python_setup_py']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/include/gatesrv) by extension 'python_setup_py'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extensions ['ignore']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extension 'ignore'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extensions ['colcon_pkg']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extension 'colcon_pkg'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extensions ['colcon_meta']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extension 'colcon_meta'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extensions ['python']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extension 'python'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extensions ['python_setup_py']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src) by extension 'python_setup_py'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extensions ['ignore']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extension 'ignore'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extensions ['colcon_pkg']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extension 'colcon_pkg'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extensions ['colcon_meta']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extension 'colcon_meta'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extensions ['python']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extension 'python'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extensions ['python_setup_py']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(gatesrv/src/interfaces) by extension 'python_setup_py'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extensions ['ignore']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extensions ['colcon_pkg']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extension 'colcon_pkg'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extensions ['colcon_meta']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extension 'colcon_meta'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extensions ['python']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extension 'python'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces) by extension 'python_setup_py'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extensions ['ignore']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extension 'colcon_pkg'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extensions ['colcon_meta']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extensions ['python']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extension 'python'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extensions ['python_setup_py']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include) by extension 'python_setup_py'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extensions ['ignore']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extensions ['colcon_meta']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extension 'colcon_meta'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extensions ['python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extension 'python'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extensions ['python_setup_py']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/include/more_interfaces) by extension 'python_setup_py'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extensions ['ignore']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extensions ['colcon_pkg']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extension 'colcon_meta'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extensions ['python']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extension 'python'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extensions ['python_setup_py']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/msg) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extensions ['ignore']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extensions ['python']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(more_interfaces/src) by extension 'python_setup_py'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extensions ['ignore']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extension 'ignore'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extensions ['colcon_pkg']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extension 'colcon_pkg'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extensions ['colcon_meta']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extension 'colcon_meta'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extensions ['python']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extension 'python'
+[1.073s] DEBUG:colcon.colcon_core.package_identification:Python package in 'py_pubsub' passes arguments to the setup() function which requires a different identification extension than 'python'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extensions ['python_setup_py']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(py_pubsub) by extension 'python_setup_py'
+[1.464s] DEBUG:colcon.colcon_core.package_identification:Package 'py_pubsub' with type 'python' and name 'py_pubsub'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extensions ['ignore']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extension 'ignore'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extensions ['colcon_pkg']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extension 'colcon_pkg'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extensions ['colcon_meta']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extension 'colcon_meta'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extensions ['python']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extension 'python'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extensions ['python_setup_py']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces) by extension 'python_setup_py'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extensions ['ignore']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extension 'ignore'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extensions ['colcon_pkg']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extension 'colcon_pkg'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extensions ['colcon_meta']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extension 'colcon_meta'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extensions ['python']
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extension 'python'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extensions ['python_setup_py']
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2) by extension 'python_setup_py'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extensions ['ignore']
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extension 'ignore'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extensions ['colcon_pkg']
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extension 'colcon_pkg'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extensions ['colcon_meta']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extension 'colcon_meta'
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extensions ['python']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extension 'python'
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extensions ['python_setup_py']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles) by extension 'python_setup_py'
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extensions ['ignore']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extension 'ignore'
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extensions ['colcon_pkg']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extension 'colcon_pkg'
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extensions ['colcon_meta']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extension 'colcon_meta'
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extensions ['python']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extension 'python'
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extensions ['python_setup_py']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4) by extension 'python_setup_py'
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extensions ['ignore']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extension 'ignore'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_pkg']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_pkg'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_meta']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_meta'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extension 'python'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python_setup_py']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC) by extension 'python_setup_py'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['ignore']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'ignore'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['ignore']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'ignore'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_pkg'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_meta']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_meta'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python_setup_py']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python_setup_py'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'ignore'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python']
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extensions ['ignore']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extension 'ignore'
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extensions ['python']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extension 'python'
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extensions ['ignore']
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extension 'ignore'
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extensions ['colcon_pkg']
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extension 'colcon_pkg'
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extensions ['colcon_meta']
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extension 'colcon_meta'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extensions ['python']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extension 'python'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extensions ['python_setup_py']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir) by extension 'python_setup_py'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extensions ['ignore']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extension 'ignore'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extensions ['colcon_pkg']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extension 'colcon_pkg'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extensions ['colcon_meta']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extension 'colcon_meta'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extensions ['python']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extension 'python'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extensions ['python_setup_py']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/CMakeFiles/cmake-tut2.dir/src) by extension 'python_setup_py'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extensions ['ignore']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extension 'ignore'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extensions ['colcon_pkg']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extension 'colcon_pkg'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extensions ['colcon_meta']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extension 'colcon_meta'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extensions ['python']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extension 'python'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extensions ['python_setup_py']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/build) by extension 'python_setup_py'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extensions ['ignore']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extension 'ignore'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extensions ['colcon_pkg']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extension 'colcon_pkg'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extensions ['colcon_meta']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extension 'colcon_meta'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extensions ['python']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extension 'python'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extensions ['python_setup_py']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/hdr) by extension 'python_setup_py'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extensions ['ignore']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extension 'ignore'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extensions ['colcon_pkg']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extension 'colcon_pkg'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extensions ['colcon_meta']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extension 'colcon_meta'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extensions ['python']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extension 'python'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extensions ['python_setup_py']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tut2/src) by extension 'python_setup_py'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extensions ['ignore']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extension 'ignore'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extensions ['colcon_pkg']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extension 'colcon_pkg'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extensions ['colcon_meta']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extension 'colcon_meta'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extensions ['python']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extension 'python'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extensions ['python_setup_py']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial) by extension 'python_setup_py'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extensions ['ignore']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extension 'ignore'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extensions ['colcon_pkg']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extension 'colcon_pkg'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extensions ['colcon_meta']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extension 'colcon_meta'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extensions ['python']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extension 'python'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extensions ['python_setup_py']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles) by extension 'python_setup_py'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extensions ['ignore']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extension 'ignore'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extensions ['colcon_pkg']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extension 'colcon_pkg'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extensions ['colcon_meta']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extension 'colcon_meta'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extensions ['python']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extension 'python'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extensions ['python_setup_py']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4) by extension 'python_setup_py'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extensions ['ignore']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extension 'ignore'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_pkg']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_pkg'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_meta']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_meta'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extension 'python'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python_setup_py']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC) by extension 'python_setup_py'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['ignore']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'ignore'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['ignore']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'ignore'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_pkg'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_meta']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_meta'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python_setup_py']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python_setup_py'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'ignore'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extensions ['ignore']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extension 'ignore'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extensions ['python']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extension 'python'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extensions ['ignore']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extension 'ignore'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extensions ['colcon_pkg']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extension 'colcon_pkg'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extensions ['colcon_meta']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extension 'colcon_meta'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extensions ['python']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extension 'python'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extensions ['python_setup_py']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-good.dir) by extension 'python_setup_py'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extensions ['ignore']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extension 'ignore'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extensions ['colcon_pkg']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extension 'colcon_pkg'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extensions ['colcon_meta']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extension 'colcon_meta'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extensions ['python']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extension 'python'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extensions ['python_setup_py']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/cmake-tutorial.dir) by extension 'python_setup_py'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extensions ['ignore']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extension 'ignore'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extensions ['colcon_pkg']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extension 'colcon_pkg'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extensions ['colcon_meta']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extension 'colcon_meta'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extensions ['python']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extension 'python'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extensions ['python_setup_py']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/my-lib.dir) by extension 'python_setup_py'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extensions ['ignore']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extension 'ignore'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extensions ['colcon_pkg']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extension 'colcon_pkg'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extensions ['colcon_meta']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extension 'colcon_meta'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extensions ['python']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extension 'python'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extensions ['python_setup_py']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir) by extension 'python_setup_py'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extensions ['ignore']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extension 'ignore'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extensions ['colcon_pkg']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extension 'colcon_pkg'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extensions ['colcon_meta']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extension 'colcon_meta'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extensions ['python']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extension 'python'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extensions ['python_setup_py']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/CMakeFiles/say-hello.dir/src) by extension 'python_setup_py'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extensions ['ignore']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extension 'ignore'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extensions ['colcon_pkg']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extension 'colcon_pkg'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extensions ['colcon_meta']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extension 'colcon_meta'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extensions ['python']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extension 'python'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extensions ['python_setup_py']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build) by extension 'python_setup_py'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extensions ['ignore']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extension 'ignore'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extensions ['colcon_pkg']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extension 'colcon_pkg'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extensions ['colcon_meta']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extension 'colcon_meta'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extensions ['python']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extension 'python'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extensions ['python_setup_py']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles) by extension 'python_setup_py'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extensions ['ignore']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extension 'ignore'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extensions ['colcon_pkg']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extension 'colcon_pkg'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extensions ['colcon_meta']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extension 'colcon_meta'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extensions ['python']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extension 'python'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extensions ['python_setup_py']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2) by extension 'python_setup_py'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extensions ['ignore']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extension 'ignore'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extensions ['colcon_pkg']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extension 'colcon_pkg'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extensions ['colcon_meta']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extension 'colcon_meta'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extensions ['python']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extension 'python'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extensions ['python_setup_py']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC) by extension 'python_setup_py'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extensions ['ignore']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extension 'ignore'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extensions ['python']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extension 'python'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extensions ['ignore']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extension 'ignore'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extension 'colcon_pkg'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extensions ['colcon_meta']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extension 'colcon_meta'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extensions ['python']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extension 'python'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extensions ['python_setup_py']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX) by extension 'python_setup_py'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extension 'ignore'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extensions ['python']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extension 'python'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.10.2/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extensions ['ignore']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extension 'ignore'
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extensions ['colcon_pkg']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extension 'colcon_pkg'
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extensions ['colcon_meta']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extension 'colcon_meta'
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extensions ['python']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extension 'python'
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extensions ['python_setup_py']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4) by extension 'python_setup_py'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extensions ['ignore']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extension 'ignore'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_pkg']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_pkg'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extensions ['colcon_meta']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extension 'colcon_meta'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extension 'python'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extensions ['python_setup_py']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC) by extension 'python_setup_py'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['ignore']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'ignore'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_pkg'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['colcon_meta']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'colcon_meta'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extensions ['python_setup_py']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdC/tmp) by extension 'python_setup_py'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['ignore']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'ignore'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_pkg']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_pkg'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['colcon_meta']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'colcon_meta'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extensions ['python_setup_py']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX) by extension 'python_setup_py'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['ignore']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'ignore'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/3.18.4/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extensions ['ignore']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extension 'ignore'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extensions ['python']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extension 'python'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extensions ['ignore']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extension 'ignore'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extensions ['colcon_pkg']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extension 'colcon_pkg'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extensions ['colcon_meta']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extension 'colcon_meta'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extensions ['python']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extension 'python'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extensions ['python_setup_py']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/cmake-good.dir) by extension 'python_setup_py'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extensions ['ignore']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extension 'ignore'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extensions ['colcon_pkg']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extension 'colcon_pkg'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extensions ['colcon_meta']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extension 'colcon_meta'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extensions ['python']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extension 'python'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extensions ['python_setup_py']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/build/CMakeFiles/say-hello.dir) by extension 'python_setup_py'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extensions ['ignore']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extension 'ignore'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extensions ['colcon_pkg']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extension 'colcon_pkg'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extensions ['colcon_meta']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extension 'colcon_meta'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extensions ['python']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extension 'python'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extensions ['python_setup_py']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr) by extension 'python_setup_py'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extensions ['ignore']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extension 'ignore'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extensions ['colcon_pkg']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extension 'colcon_pkg'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extensions ['colcon_meta']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extension 'colcon_meta'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extensions ['python']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extension 'python'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extensions ['python_setup_py']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/hdr/CMakeFiles) by extension 'python_setup_py'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extensions ['ignore']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extension 'ignore'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extensions ['colcon_pkg']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extension 'colcon_pkg'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extensions ['colcon_meta']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extension 'colcon_meta'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extensions ['python']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extension 'python'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extensions ['python_setup_py']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src) by extension 'python_setup_py'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extensions ['ignore']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extension 'ignore'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extensions ['colcon_pkg']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extension 'colcon_pkg'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extensions ['colcon_meta']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extension 'colcon_meta'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extensions ['python']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extension 'python'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extensions ['python_setup_py']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles) by extension 'python_setup_py'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extensions ['ignore']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extension 'ignore'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extensions ['colcon_pkg']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extension 'colcon_pkg'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extensions ['colcon_meta']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extension 'colcon_meta'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extensions ['python']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extension 'python'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extensions ['python_setup_py']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(tutorial_interfaces/cmake-tutorial/src/CMakeFiles/my-lib.dir) by extension 'python_setup_py'
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.519s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'gatesrv' in --packages-select
+[1.579s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gate_detection' in 'auv final/AUV_final_project/AUV_ws/src/gate_detection'
+[1.579s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gateclnt' in 'gateclnt'
+[1.579s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'py_pubsub' in 'py_pubsub'
+[1.580s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.584s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.586s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.599s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.599s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.599s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.607s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.617s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.618s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohamedmehery/dev_ws/src/install/local_setup.ps1'
+[1.621s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mohamedmehery/dev_ws/src/install/_local_setup_util_ps1.py'
+[1.623s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohamedmehery/dev_ws/src/install/setup.ps1'
+[1.626s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohamedmehery/dev_ws/src/install/local_setup.sh'
+[1.627s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mohamedmehery/dev_ws/src/install/_local_setup_util_sh.py'
+[1.628s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohamedmehery/dev_ws/src/install/setup.sh'
+[1.631s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohamedmehery/dev_ws/src/install/local_setup.bash'
+[1.632s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohamedmehery/dev_ws/src/install/setup.bash'
+[1.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mohamedmehery/dev_ws/src/install/local_setup.zsh'
+[1.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mohamedmehery/dev_ws/src/install/setup.zsh'
