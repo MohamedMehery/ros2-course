@@ -5,7 +5,7 @@
 #include <memory>
 using namespace std; 
 
-void add(const std::shared_ptr<interfaces::srv::interface::request> request,
+void find_gate(const std::shared_ptr<interfaces::srv::interface::request> request,
           std::shared_ptr<interfaces::srv::interface::response> response)
 {
   /* 
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
   std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("guid gate service");
 
   rclcpp::Service<interfaces::srv::interface>::SharedPtr service =
-    node->create_service<interfaces::srv::interface>("guid_gate", &add);
+    node->create_service<interfaces::srv::interface>("guid_gate", &find_gate);
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Ready to guid gate.");
 
