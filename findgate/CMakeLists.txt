@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(gatesrv)
+project(findgate)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -19,11 +19,9 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(gateclnt REQUIRED)
 
 add_executable(server src/gateserv.cpp)
-ament_target_dependencies(server
-  rclcpp interfaces)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
