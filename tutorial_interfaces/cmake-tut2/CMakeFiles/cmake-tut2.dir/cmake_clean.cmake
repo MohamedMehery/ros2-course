@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cmake-tut2.dir/main.cpp.o"
   "CMakeFiles/cmake-tut2.dir/src/mylib.cpp.o"
-  "cmake-tut2"
+  "CMakeFiles/cmake-tut2.dir/main.cpp.o"
   "cmake-tut2.pdb"
+  "cmake-tut2"
 )
 
 # Per-language clean rules from dependency scanning.
