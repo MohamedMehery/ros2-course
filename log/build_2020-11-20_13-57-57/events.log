@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001627] (-) JobUnselected: {'identifier': 'gate_detection'}
-[0.003126] (-) JobUnselected: {'identifier': 'gateclnt'}
-[0.003241] (-) JobUnselected: {'identifier': 'py_pubsub'}
-[0.003982] (-) EventReactorShutdown: {}
