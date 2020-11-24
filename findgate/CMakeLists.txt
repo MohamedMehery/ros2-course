@@ -17,11 +17,11 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-
+find_package(rclcpp REQUIRED)
 
 add_executable(server src/gateserv.cpp)
+
 ament_target_dependencies(server  "rclcpp")
 
 
@@ -30,12 +30,17 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS
-  server
-  DESTINATION lib/${PROJECT_NAME})
 
 set(interface
   "src/interfaces/interface.srv")
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${interfaces}
+)
+
+
+install(TARGETS server
+  DESTINATION lib/${PROJECT_NAME})
 
 rosidl_target_interfaces( ${PROJECT_NAME}
  "interface")

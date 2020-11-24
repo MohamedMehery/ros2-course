@@ -6,7 +6,6 @@
 
 using namespace std::chrono_literals;
 
-/*Create a node and an AddressBook publisher.*/
 class AddressBookPublisher : public rclcpp::Node
 {
 public:
@@ -15,8 +14,7 @@ public:
   {
     address_book_publisher_ =
       this->create_publisher<more_interfaces::msg::AddressBook>("address_book", 10);
-      
-    /*Populate AddressBook fields.*/
+
     auto publish_msg = [this]() -> void {
         auto message = more_interfaces::msg::AddressBook();
 
@@ -26,13 +24,11 @@ public:
         message.gender = message.MALE;
         message.address = "unknown";
 
-      /*Finally send the message periodically.*/
         std::cout << "Publishing Contact\nFirst:" << message.first_name <<
           "  Last:" << message.last_name << std::endl;
 
         this->address_book_publisher_->publish(message);
       };
-    /*Create a 1 second timer to call our publish_msg function every second.*/
     timer_ = this->create_wall_timer(1s, publish_msg);
   }
 
