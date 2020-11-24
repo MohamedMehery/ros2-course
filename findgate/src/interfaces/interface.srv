@@ -1,5 +1,5 @@
-int x_coor
-int y_coor
+int32 xdir
+int32 ydir
 ---
-string x_instruct
-string y_instruct
+string xinstruct
+string yinstruct

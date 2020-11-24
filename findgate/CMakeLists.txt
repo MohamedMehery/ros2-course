@@ -34,15 +34,16 @@ endif()
 set(interface
   "src/interfaces/interface.srv")
 
+
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${interfaces}
+  ${interface}
 )
 
 
 install(TARGETS server
-  DESTINATION lib/${PROJECT_NAME})
+  DESTINATION lib/${PROJECT_NAME})  
 
-rosidl_target_interfaces( ${PROJECT_NAME}
- "interface")
+rosidl_target_interfaces(server
+ ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 ament_package()
