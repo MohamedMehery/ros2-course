@@ -13,16 +13,13 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='mohamed',
-    maintainer_email='mohamed@email.com',
-    description='simple publisher tutorial',
-    license='Apache licence 2.0',
+    maintainer='mohamedmehery',
+    maintainer_email='es-mohamed.abdelnasser1415@alexu.edu.eg',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                'talker = py_pubsub.publisher_member_function:main',
-                'listener = py_pubsub.subscriber_member_function:main',
         ],
-
     },
 )
